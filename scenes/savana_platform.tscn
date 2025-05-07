@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg4qw5nvhnuc4"]
+
+[ext_resource type="Texture2D" uid="uid://3ck5lx7yefee" path="res://assets/sprites/platforms.png" id="1_j2gs8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_esrax"]
+size = Vector2(32, 8)
+
+[node name="savana platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_j2gs8")
+region_enabled = true
+region_rect = Rect2(16, 32, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_esrax")
